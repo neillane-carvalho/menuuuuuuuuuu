@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Delícias da Juliana</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Menu</h1>
+        <div class="options">
+            <h2>Escolha sua Entrada:</h2>
+            <select id="entrada">
+                <option value="Misto">Misto de legumes e camarão no pão</option>
+                <option value="Cachorro">Cachorro Quente de Carne na Grelha</option>
+                <option value="Canja">Canja de Galinha com Legumes e Endro</option>
+            </select>
+
+            <h2>Escolha seu Prato Principal:</h2>
+            <select id="pratoPrincipal">
+                <option value="Coxa">Coxa de Frango ao Molho Balsamico, Mix de Folhas e Arroz Branco</option>
+                <option value="Almondegas">Almondegas com Legumes e Molho de Tomate</option>
+                <option value="Lasanha">Lasanha Recém Cozida com Molho a Bolonhesa</option>
+                <option value="Risoto">Risoto Vegetariano com Cogumelos Frescos e Queijo Parmesão</option>
+                <option value="Espaguete">Espaguete com Marisco Misto Picante</option>
+            </select>
+
+            <h2>Escolha sua Sobremesa:</h2>
+            <select id="sobremesa">
+                <option value="Bola">Bolo de Brownie de Chocolate com uma Bola de Sorvete</option>
+                <option value="Fatia">Fatia de Cheesecake com Geleia de Frutas Vermelhas e Morangos</option>
+                <option value="Massa">Massa de Suspiro com Creme e Morangos</option>
+            </select>
+
+            <div class="imagem-container">
+                <img id="imagemEntrada" class="imagem-prato" alt="ㅤ" height="150px" width="200px">
+                <img id="imagemPratoPrincipal" class="imagem-prato" alt="ㅤ" height="150px" width="200px">
+                <img id="imagemSobremesa" class="imagem-prato" alt="ㅤ"  height="150px" width="200px">
+            </div>
+
+            <button onclick="mostrarPedido()">Fazer Pedido</button>
+        </div>
+
+        <div class="resultado" id="resultado">
+            
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

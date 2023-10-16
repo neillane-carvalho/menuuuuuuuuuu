@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>TED - menu</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+    <link rel="stylesheet" href="style.css" type="text/css" />
+
+    <script src="cardapio.js"></script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Lobster&display=swap');
+    </style>
+
+    
+</head>
+
+<body>
+
+    <h1> Cardapio</h1>
+    <h2>Restaurante dos Devs</h2>
+
+    <div id="cabecalho">
+        <img src="imagens/cabecalho.jpg"   class="cabecalho"  >
+       
+    </div>
+
+    <div class="coluna">
+        <h3>Entradas</h3> 
+        <hr> <br>
+
+        <img src="imagens/misto-de-legumes-e-camarao-no-pao.avif">
+        <h4>Misto de legumes e <br> camarão no pão</h4>
+
+        <img src="imagens/cachorro-quente-de-carne-grelhada-com-lanche-de-ketchup-ia-generativa_188544-7829.avif">
+        <h4>Cachorro Quente de <br>Carne na Grelha</h4>
+
+        <img src="imagens/colher-com-canja-de-galinha-com-legumes-e-endro_140725-636.avif" ALIGN=TOP>
+        <h4>Canja de Galinha com <br>Legumes e Endro</h4>
+    </div>
+
+    <div class="coluna">
+        <h3>Pratos Principais</h3>
+        <hr> <br>
+
+        <img src="imagens/enfeite-de-arroz-com-coxa-de-frango-grelhado-picante-em-um-prato-de-granito_114579-1962.avif">
+        <h4>Coxa de Frango ao Molho Balsamico, <br>Mix de Folhas e Arroz Branco</h4>
+
+        <img src="imagens/almondegas-com-legumes-e-molho-de-tomate_1220-7420.avif">
+        <h4>Almondegas com Legumes e <br>Molho de Tomate</h4>
+
+        <img src="imagens/lasanha-recem-cozida-com-molho-a-bolonhesa-gourmet-gerada-por-ia_188544-16148.avif">
+        <h4>Lasanha Recém Cozida com <br>Molho a Bolonhesa</h4>
+
+        <img src="imagens/risoto-vegetariano-com-cogumelos-frescos-e-queijo-parmesao-gerado-por-ia_188544-10223.avif">
+        <h4>Risoto Vegetariano com <br>Cogumelos Frescos e Queijo Parmesão</h4>
+
+        <img src="imagens/espaguete-com-marisco-misto-picante-em-fundo-escuro_1150-45298.jpg">
+        <h4>Espaguete com Marisco <br>Misto Picante</h4>
+    </div>
+
+    <div class="coluna">
+
+        <h3>Sobremesas</h3>
+        <hr> <br>
+
+        <img src="imagens/bolo-de-brownie-de-chocolate-com-uma-bola-de-sorvete_155003-433.avif">
+        <h4>Bolo de Brownie de Chocolate <br>com uma Bola de Sorvete</h4>
+        <p></p>
+
+        <img src="imagens/closeup-tiro-de-cheesecake-com-geleia-decorada-com-morangos-e-frutas-vermelhas_181624-45104.avif">
+        <h4>Fatia de Cheesecake com de <br>Geleia de Frutas Vermelhas e Morangos</h4>
+        <p></p>
+
+        <img src="imagens/closeup-tiro-de-uma-deliciosa-folha-de-creme-com-morangos-em-uma-mesa-de-madeira_181624-22715.avif">
+        <h4>Massa de Suspiro com <br>Creme e Morangos</h4>
+        <p></p>
+    </div> <br>
+
+    <h3>Escolha seu Menu</h3>
+    <hr> <br>
+    <div class="choices">
+        <select id="entradaSelect">
+            <option value="Sem Entrada">Sem Entrada</option>
+            <option value="Misto">Misto</option>
+            <option value="Cachorro Quente">Cachorro Quente</option>
+            <option value="Canja">Canja</option>
+        </select>
+
+        <select id="pratoPrincipalSelect">
+            <option value="Sem prato Principal">Sem prato Principal</option>
+            <option value="Coxa de Frango">Coxa de Frango</option>
+            <option value="Almodegas">Almodegas</option>
+            <option value="Lasanha">Lasanha</option>
+            <option value="Risoto">Risoto</option>
+            <option value="Espaguete">Espaguete</option>
+        </select>
+
+        <select id="sobremesaSelect">
+            <option value="Sem Sobremesa">Sem Sobremesa</option>
+            <option value="Bolo de Brwonie">Bolo de Brwonie</option>
+            <option value="Cheesecake">Cheesecake</option>
+            <option value="Suspiro">Suspiro</option>
+        </select>
+        
+        <p></p> <br>
+        
+        
+        <br> <button onclick="mostrarPedido()">Fazer Pedido</button>
+       
+    </div> 
+    
+
+    <div id="pedido" class="hidden">
+        <ul id="pedidoList">
+
+        </ul>
+    </div>
+
+</body>
+
+</html>

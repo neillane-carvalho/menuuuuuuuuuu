@@ -1,0 +1,78 @@
+img{
+    border-radius: 30px;
+    width: 120px;
+    height: 120px;
+    align-items: baseline;
+}
+
+
+.cabecalho {
+   max-width: 100%;
+  height: auto;
+  width: 500px;
+  background-image: url(imagens/cabecalho.jpg);
+}
+
+.coluna{
+    float: left;
+    width: 33.33%;
+    
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  p {
+    float: right;
+    margin: 5px;
+  }
+
+ body{
+    background-color: rgb(209, 199, 187);
+ }
+
+ h2 {
+    text-align: center;
+    font-family: Lobster; 
+    
+ }
+
+ h1 {
+    text-align: center;
+    font-family: Lobster; 
+    font-size: 50px; 
+    
+ }
+
+ h3 {
+    color: rgb(26, 158, 114);
+    font-family: Lobster;
+    font-size: 25px;
+ }
+
+ select {
+    appearance: none;
+    background: url(http://www.webcis.com.br/images/imagens-noticias/select/ico-seta-appearance.gif) no-repeat;
+    background-position: 218px center;
+    border: 1px solid #a57306;
+    width: 250px;
+    height: 20px;
+    
+ }
+
+button {
+    background: #a57306;
+    color: white;
+    border-style: outset;
+    border-color: #a57306;
+    height: 50px;
+    width: 100px;
+    font: bold15px arial,sans-serif;
+    text-shadow: none;
+    border-radius: 20%;
+    text-align: center;
+}
+ 
